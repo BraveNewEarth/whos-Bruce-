@@ -31,7 +31,7 @@ const InfoPanel = ({ selectedNode, onClose }) => {
           
           {selectedNode.id === 'bruce-weaver' && (
             <img 
-              src="/BruceWeaver.Headshot.png" 
+              src="/whos-Bruce-/BruceWeaver.Headshot.png" 
               alt="Bruce Weaver Headshot"
               className="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white shadow-lg"
             />

@@ -76,23 +76,7 @@ function App() {
         </button>
       )}
 
-      {/* Search Panel - Desktop: Fixed left, Mobile: Full screen overlay */}
-      <div className={`
-        ${isMobile ? 'fixed' : 'absolute'} top-0 left-0 h-full z-40 transition-transform duration-300 ease-in-out
-        ${isMobile && !isMobileMenuOpen ? '-translate-x-full' : 'translate-x-0'}
-        ${isMobile ? 'w-full' : 'w-80'}
-        bg-white shadow-lg
-        ${!isMobile ? 'block' : ''}
-      `}>
-        <SearchPanel
-          onSearch={handleSearch}
-          onNodeSelect={handleNodeSelect}
-          onResetView={handleResetView}
-          searchResults={searchResults}
-          isMobile={isMobile}
-          onClose={() => setIsMobileMenuOpen(false)}
-        />
-      </div>
+      {/* Search Panel - Removed as per user request */}
 
       {/* Mobile Overlay Background */}
       {isMobileMenuOpen && isMobile && (
@@ -143,12 +127,12 @@ function App() {
               Contact
             </button>
             <button
-              onClick={() => window.open('#resume', '_blank')}
+              onClick={() => window.open("https://new.express.adobe.com/webpage/4MzJuU0CrY5Fc", ",_blank,")}
               className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 
                        rounded-md text-xs md:text-sm font-medium transition-colors duration-200
                        md:px-4 md:py-2"
             >
-              Resume
+              Read Biopic
             </button>
           </div>
         </div>
